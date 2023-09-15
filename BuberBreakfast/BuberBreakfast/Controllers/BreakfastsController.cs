@@ -16,10 +16,10 @@ public class BreakfastsController : ControllerBase
         _breakfastService = breakfastService;
     }
 
-    [HttpPost()]
+    [HttpPost]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
-        // MODELANDO OS DADOS DA REQUISIÇÃO PARA O MODELO INTERNO
+        // MODELANDO OS DADOS DA REQUISIï¿½ï¿½O PARA O MODELO INTERNO
         var breakfast  = new Breakfast(
             Guid.NewGuid(),
             request.Name,
@@ -30,7 +30,7 @@ public class BreakfastsController : ControllerBase
             request.Savory,
             request.Sweet);
         
-        // LÓGICA PARA EXECUTAR A AÇÃO PROPOSTA PELO ENDPOINT
+        // Lï¿½GICA PARA EXECUTAR A Aï¿½ï¿½O PROPOSTA PELO ENDPOINT
         _breakfastService.CreateBreakfast(breakfast);
 
         // CONVERTENDO OS DADOS: MODELO INTERNO -> MODELO DA API
