@@ -1,11 +1,11 @@
-@id=28c5dee1-f09f-4518-b7f5-979549115d80
+@id=263e082e-af48-4c5d-a4a0-df7dfcdb39a2
 
 PUT https://localhost:7203/breakfasts/{{id}}
 Content-Type: application/json
 
 {
-    "name": "Vegan Sunshine 2",
-    "description": "Up-to-date",
+    "name": "Café da Manhã AGORA",
+    "description": "UHUU",
     "startDateTime": "2022-04-08T08:00:00",
     "endDateTime": "2022-04-08T11:00:00",
     "savory": [
